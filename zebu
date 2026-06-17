@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+<!--    let ism ="nursulton";-->
+<!--    ism="default";-->
+<!--    const ism2="Jasmina";-->
+<!--    ism="324342";-->
+<!--    let son=95;-->
+<!--    let son2=2;-->
+<!--    console.log(son**son2);-->
+<!--    console.error("Xato");-->
+    let age=26;
+    if (age<7)
+       {console.log("Siz bog'cha yoshidasiz");}
+    else if (age<11)
+       {console.log("Siz boshlang'ich sinf yoshidasiz");}
+    else if (age<18)
+       {console.log("Siz yuqori sinf yoshidasiz");}
+    else {console.log("Siz maktab yoshidan kattasiz");}
+    console.log("dastur tugadi");
+</script>
+
+</body>
+</html>
