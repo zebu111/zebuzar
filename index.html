@@ -1,23 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-  <style>
-      .contoiner {
-      display:grid;
-      grid
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zebuzar Tirkeshova</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#ff9ecf,#a18cd1);
+}
+
+.card{
+width:360px;
+background:#fff;
+border-radius:25px;
+padding:25px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+animation:show .8s ease;
+}
+
+@keyframes show{
+from{opacity:0;transform:scale(.8);}
+to{opacity:1;transform:scale(1);}
+}
+
+img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #ff69b4;
+margin-bottom:15px;
+}
+
+h2{
+color:#ff1493;
+margin-bottom:15px;
+}
+
+.info{
+text-align:left;
+line-height:2;
+font-size:17px;
+}
+
+.info b{
+color:#e91e63;
+}
+
+footer{
+margin-top:20px;
+color:#777;
+font-size:14px;
+}
+</style>
+
 </head>
 <body>
-<header>
-  <h2>Logo</h2>
-  <a href="#">Biz haqimizda</a>
-  <a href="#">Aloqa</a>
-  <a href="#">Manzil</a>
-</header>
-<div class="container">
-  <p>zebuzar</p>
+
+<div class="card">
+
+<img src="zebuzar.jpg" alt="Zebuzar">
+
+<h2>Zebuzar Tirkeshova</h2>
+
+<div class="info">
+<p><b>👤 Ism:</b> Zebuzar</p>
+<p><b>📝 Familiya:</b> Tirkeshova</p>
+<p><b>🎂 Tug'ilgan sana:</b> 20.08.2011</p>
+<p><b>📞 Telefon:</b> +998 95 078 12 91</p>
+<p><b>📍 Manzil:</b> Amudaryo tumani, 5-Tom mahallasi</p>
+<p><b>📧 Email:</b> zebuzartirkeshova0@gmail.com</p>
 </div>
+
+<footer>❤️ Created by ChatGPT</footer>
+
+</div>
+
 </body>
 </html>
