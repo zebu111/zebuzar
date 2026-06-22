@@ -14,16 +14,24 @@ class QAHRAMON:
             print("Siz kuchsizlandingiz")
         else:
             print("Sizning kuchingiz o'zgarmadi")
-        print(f"{self.ism} {y} ball kuchi bilan himoya qilasiz")
+        print(f"{self.ism} {y} ball kuchi bilan hujum qilasiz")
 
     def himoya(self):
-        tasodif_himoya = random.randint(-20, 20)
-        print(f"{self.ism} {tasodif_himoya}")
+        tasodif = random.randint(-20, 20)
+        y = self.kuch + tasodif
+        if tasodif > 0:
+            print("Sizning himoyangiz kuchaydi")
+        elif tasodif < 0:
+            print("Sizning himoyangiz kuchsizlandi")
+        else:
+            print("Sizning himoyangiz o'zgarmadi")
+        print(f"{self.ism} {y} ball bilan himoyalanasiz")
 
 alibek = QAHRAMON("Alibek", 100)
-ravshanbek = QAHRAMON("ravshanbek", 100)
+ravshanbek = QAHRAMON("Ravshanbek", 100)
 
 alibek.hujum()
 alibek.himoya()
+
 ravshanbek.hujum()
 ravshanbek.himoya()
