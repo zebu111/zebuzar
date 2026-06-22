@@ -1,90 +1,29 @@
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zebuzar Tirkeshova</title>
+import random
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+class QAHRAMON:
+    def __init__(self, ism, kuch):
+        self.ism = ism
+        self.kuch = kuch
 
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:linear-gradient(135deg,#ff9ecf,#a18cd1);
-}
+    def hujum(self):
+        tasodif = random.randint(-20, 20)
+        y = self.kuch + tasodif
+        if tasodif > 0:
+            print("Siz kuchaydingiz")
+        elif tasodif < 0:
+            print("Siz kuchsizlandingiz")
+        else:
+            print("Sizning kuchingiz o'zgarmadi")
+        print(f"{self.ism} {y} ball kuchi bilan himoya qilasiz")
 
-.card{
-width:360px;
-background:#fff;
-border-radius:25px;
-padding:25px;
-text-align:center;
-box-shadow:0 15px 35px rgba(0,0,0,.25);
-animation:show .8s ease;
-}
+    def himoya(self):
+        tasodif_himoya = random.randint(-20, 20)
+        print(f"{self.ism} {tasodif_himoya}")
 
-@keyframes show{
-from{opacity:0;transform:scale(.8);}
-to{opacity:1;transform:scale(1);}
-}
+alibek = QAHRAMON("Alibek", 100)
+ravshanbek = QAHRAMON("ravshanbek", 100)
 
-img{
-width:170px;
-height:170px;
-border-radius:50%;
-object-fit:cover;
-border:6px solid #ff69b4;
-margin-bottom:15px;
-}
-
-h2{
-color:#ff1493;
-margin-bottom:15px;
-}
-
-.info{
-text-align:left;
-line-height:2;
-font-size:17px;
-}
-
-.info b{
-color:#e91e63;
-}
-
-footer{
-margin-top:20px;
-color:#777;
-font-size:14px;
-}
-</style>
-
-</head>
-<body>
-
-<div class="card">
-
-<img src="C:\Users\user\Downloads\Zebu.html">
-
-<h2>Zebuzar Tirkeshova</h2>
-
-<div class="info">
-<p><b>👤 Ism:</b> Zebuzar</p>
-<p><b>📝 Familiya:</b> Tirkeshova</p>
-<p><b>🎂 Tug'ilgan sana:</b> 20.08.2011</p>
-<p><b>📞 Telefon:</b> +998 95 078 12 91</p>
-<p><b>📍 Manzil:</b> Amudaryo tumani, 5-Tom mahallasi</p>
-<p><b>📧 Email:</b> zebuzartirkeshova0@gmail.com</p>
-</div>
-</div>
-
-</body>
-</html>
+alibek.hujum()
+alibek.himoya()
+ravshanbek.hujum()
+ravshanbek.himoya()
